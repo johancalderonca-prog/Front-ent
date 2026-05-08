@@ -1,45 +1,41 @@
 body {
     margin: 0; 
-    background-color: blue;
+    background-color: rgb(2, 28, 39);
 }
- 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(57, 130, 139);
+    color: rgb(8, 8, 8);
+    border-radius: 1vw;
 }
-
 .header h1 {
     font-size: 50px; 
     flex: 1;
     text-align: center;
     margin: 0;
 }
-
+.titulo2 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(247, 244, 244);
+}
 .header .icono {
     margin: 20px;
 }
-
-.fa-solid {
+.menu {
     font-size: 30px;
     margin-right: 20px;
 }
-
-.hr {
-    border: none;
-    background-color: rgb(34, 32, 32);
-    height: 1px;
-    margin: 10px 0;
-}
-
 .main {
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
-
 .container {
+    box-shadow: #000 2px 4px 8px;
     display: flex;
     background-color: rgb(34, 33, 33);
     width: 400px;
@@ -51,17 +47,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
-.inicio {
-    font-size: 30px;
-    margin-top: 35px;
-    display: flex;
-    display: flex;
-    justify-content: center;
-}
-
 .input_email {
     padding: auto;
     width: 200px;
@@ -70,9 +56,9 @@ body {
     border-radius: 10px;
     margin-top: 0px;
     border: none;
-    
+    font-size: 20px;
+    box-shadow: #000 2px 2px 5px;
 }
-
 .input_login {
     padding: auto;
     width: 200px;
@@ -80,28 +66,36 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     border: none;
-}
-
-.btn_login {
-    padding: auto;
-    width: 200px;
-    height: 50px;
-    margin-bottom: 30px;
-    border-radius: 10px;
     font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
-    border: none;
-    
+    box-shadow: #000 2px 2px 5px;
 }
-.input_con {
+.btn_login {
+    display:flex;    
+    justify-content: center;
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: #000 2px 2px 5px;
+    background-color: gray;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.olvidaste {
     display: flex;
     justify-content: center;
     margin: 10px;
-    color: black;
+    color: black; 
+    text-decoration: none;
     
 }
-
 .btn_registrarse {
     display: block;
     margin: auto;
@@ -113,109 +107,228 @@ body {
     font-size: 20px;
     font-weight: bold;
     border: none;
-
+    box-shadow: #000 2px 2px 5px;
+    background-color: rgb(39, 227, 252);
+    cursor: pointer;
 }
-
 .author {
     font-size: large;
     color: rgb(3, 3, 3);
 }
-
-.search-form {
+.headerdashboard {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(57, 130, 139);
+    color: rgb(14, 13, 13);
 }
-
+.buscar{
+border-radius: 10px;
+border: none;
+height: 40px;
+width: 200px;
+}
+.search-form {
+display: flex;
+align-items: center;
+background-color: white;
+border-radius: 1vw;
+padding: 8px 15px;
+border: none;
+width: 20vw;
+box-shadow: #000 0 2px 5px;
+font-size: 20px;
+}
+.search-form input {
+margin-left: 1vw;
+font-size: 20px;
+}
+.tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    box-shadow: 2px 4px 8px rgb(10, 10, 10);
+}
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.dash {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+.seccion-principal {
+    display: flex;
+}
+.contenedor-derecho {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.headerdashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: #000 2px 2px 5px;
+    position: relative;
+}
+.nav {
+    width: 18vw;
+    background-color: rgb(16, 185, 197);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #050000;
+    box-shadow: #000 2px 4px 8px;
+}
+.nav li:hover {
+    background-color: rgb(15, 62, 216);
+    list-style: none;
+    padding: 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+.nav li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+}
 .buscar {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 10px;
-    width: 250px;
-    height: 30px;
     font-size: 16px;
 }
-
-.fa {
+.formulario-crear {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: auto;
+}
+.formulario {
+    background-color: rgba(13, 141, 150, 0.712);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #000 2px 4px 8px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.nombre-producto, .categoría, .precio, .descripcion, .cantidad, .nombre, .telefono, .correo, .contraseña, .confirmar-contraseña, .edad {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
+    margin-bottom: 15px;
 }
-
-.nav {
-    width: 250px;
-    background-color: skyblue;
-    height: 100vh;
+.formulario-crear input{
     border-radius: 10px;
-    overflow: hidden;
-    margin-top: 5px;
-    padding: 20px;
-}
-
-.nav a {
-    display: block;
+    border: none;
     padding: 15px;
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    box-shadow: #000 2px 2px 5px;
 }
-
-.create {
-    background: white;
-    width: 250px;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Imágenes */
-.create img {
-    display: block;
-    margin: 0 auto 10px;
-}
-
-/* Texto pequeño */
-small {
-    color: gray;
-}
-main {
-    background: linear-gradient(to right, #4facfe, #1f129c);
-    
-    
-    width: 100%;
-    height: calc(100vh - 60px); 
-
+.botones-form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
-
-.contenedor {
-    display: flex;
-    min-height: 100vh;
-
-}
-
-.contenido {
-    flex: 1;
-    padding: 20px;
+button {
+    padding: 15px 30px;
     border-radius: 10px;
-    margin-top: 100px;
-
+    border: none;
+    box-shadow: #000 2px 2px 5px;
+    margin-bottom: 15px;
 }
-
-.titulo {
-margin-bottom: 150px;
+.aceptar {
+    background-color: rgb(1, 247, 42);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
 }
-
-.body {
+.cancelar {
+    background-color: red;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.acciones {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+    gap: 10px;
 }
-    
-    
+.btn-put {
+    background-color: rgb(1, 247, 95);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-delete {
+    background-color: rgb(248, 14, 14);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+.titulo2 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+thead tr {
+    background-color: rgb(15, 62, 216);
+    color: #080808;
+    text-align: left;
+    font-weight: bold;
+}
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #000;
+}
+tbody tr:hover {
+    background-color: rgb(15, 62, 216);
+}
+table img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+.btn-put, .btn-delete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+}
+.cerrar {
+    background-color: rgb(248, 14, 14);
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 4vh;
+}
+img {
+    border-radius: 1vw;
+}
+
+
+
+

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Johan Stid Calderón - JohanSport">
-    <meta name="description" content="sistema de inventario para una pagina deportiva">
     <meta name="keywords" content="inventario, pagina deportiva, sistema de inventario">
+    <meta name="description" content="sistema de inventario para una pagina deportiva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/styles.css" type="text/css">
     <link rel="icon" href="img/icon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>JohanSport</title>
+    <title>Actualizar</title>
 </head>
 <body class="dash">
     <header class="headerdashboard">
@@ -22,7 +22,7 @@
         <i class="menu fa-solid fa-bars"> </i>
     </header>
     <div class="seccion-principal">
-        <nav class="nav">
+    <nav class="nav">
         <h2><strong>Menú de navegación</strong></h2>
         <ul>
             <li><a  href="dashboard.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
@@ -39,30 +39,37 @@
     </nav>
     <div class="contenedor-derecho">
         <main class=" contenido">
-            <h2 class="titulo2">¡Bienvenido a la tienda Johan!</h2>
-            <article class="tarjeta">
-                <img src="img/crear.png" alt="ventas" width="100" height="100">
-                <div class="info">
-                    <h3>Total de ventas hoy: </h3>
-                    <P><strong>Total:</strong></P><p id="salesValue"> 0</p>
-                </div>
-            </article>
-            <article class="tarjeta">
-                <img src="img/bolsa.png" alt="Icono de stock" width="100" height="100">
-                <div class="info">
-                    <h3>Productos en stock: </h3>
-                    <strong>Total:</strong><p id="stockValue"> 0</p>
-                </div>
-            </article>
-            <article class="tarjeta">
-                <img src="img/guayo.png" alt="imagen de guayos adidas" width="100" height="100"> 
-                <div class="info">
-                    <h3 id="featuredTitle">¡Producto destacado!</h3>
-                    <p><small id="featuredDescription">Guayos con taches adidadas para hombre</small></p>
-                    <p><strong id="featuredPrice">Precio con 30% de dto: 370.000</strong></p>
-                </div>
-            </article>
-            <p id="dashboardStatus" class="form-status"></p>
+            <section class="formulario">
+                <h2 class="titulo2">Actualizar producto</h2>
+                <form class="formulario-crear" id="productForm">
+                    <div class="nombre-producto">
+                        <label>Nombre del producto</label>
+                        <input type="text" id="productName" placeholder="Nombre del producto" required>
+                    </div>
+                    <div class="categoría">
+                        <label>Categoría</label>
+                        <input type="text" id="productCategory" placeholder="Categoría del producto" required>
+                    </div>
+                    <div class="precio">
+                        <label>Precio</label>
+                        <input type="number" id="productPrice" placeholder="Precio del producto" required>
+                    </div>
+                    <div class="cantidad">
+                        <label>Cantidad</label>
+                        <input type="number" id="productStock" placeholder="Cantidad de productos" required>
+                    </div>
+                    <div class="descripcion">
+                        <Label>Descripción</Label>
+                        <input type="text" id="productDescription" placeholder="Descripción del producto" required>
+                    </div>
+                    <div class="botones-form">
+                        <button class="aceptar" type="submit">Actualizar</button>
+                        <button class="cancelar" type="button">Cancelar</button>
+                    </div>
+                </form>
+                <p id="productFormStatus" class="form-status"></p>
+
+            </section>
         </main>
     <footer>
         <small class="author">JohanSport&copy;2026</small>
